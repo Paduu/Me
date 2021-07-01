@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Patrick Ramseier</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script type="text/javascript">
+      function scrollContact() {
+        $('html,body').animate({
+          scrollTop: $("#contact").offset().top - 80
+        });
+      }
+      function scrollServices() {
+        $('html,body').animate({
+          scrollTop: $("#services").offset().top - 80
+        });
+      }
+      function scrollAbout() {
+        $('html,body').animate({
+          scrollTop: $("#aboutMe").offset().top - 80
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div class="ui huge top fixed inverted secondary pointing menu" style="background-color: #36666aff;">
+      <div class="left menu">
+        <div class="item">
+          <img src="images/logo.svg">
+          <p>Patrick Ramseier</p>
+        </div>
+      </div>
+      <div class="right menu">
+        <a class="item" href="#" onclick="scrollAbout();">About Me</a>
+        <a class="item" href="#" onclick="scrollServices();">Services</a>
+        <a class="item" href="#" onclick="scrollContact();">Contact</a>
+      </div>
+    </div>
+    <div id="separator" style="height: 8em;"></div>
+    <div class="ui center aligned container">
+      <div id="aboutMe" class="ui left aligned raised very padded text container segment">
+        <img class="ui medium centered circular image" src="images/me.png">
+        <h1 class="ui header">
+          <i class="user circle icon"></i>
+          <div class="content">About Me</div>
+        </h1> 
+        <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div id="services" class="ui left aligned raised very padded text container segment">
+        <h1 class="ui header">
+          <i class="settings icon"></i>
+          <div class="content">Services</div>
+        </h1>
+        <div class="ui items">
+          <div class="item">
+            <div class="image">
+              <img src="images/netw.svg">
+            </div>
+            <div class="content">
+              <div class="header">Networking</div>
+              <div class="description">
+                <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="images/security.svg">
+            </div>
+            <div class="content">
+              <div class="header">Security</div>
+              <div class="description">
+                <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="images/coding.svg">
+            </div>
+            <div class="content">
+              <div class="header">Automation and Programming</div>
+              <div class="description">
+                <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="images/tec_doc.svg">
+            </div>
+            <div class="content">
+              <div class="header">Technical Documentation and Concepts</div>
+              <div class="description">
+                <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div id="contact" class="ui left aligned raised very padded text container segment">
+      <h1 class="ui header">
+        <i class="paper plane icon"></i>
+        <div class="content">Contact</div>
+      </h1>
+      <div class="ui equal width form">
+        <label style="font-weight: bold;">Name</label>
+        <div class="two fields">
+          <div class="field">
+            <input type="text" name="firstname" placeholder="First Name">
+          </div>
+          <div class="field">
+            <input type="text" name="firstname" placeholder="Last Name">
+          </div>
+        </div>
+        <div class="fields">
+          <div class="field">
+            <label>E-Mail</label>
+            <input type="email" name="email" placeholder="email@domain.com">
+          </div>
+        </div>
+        <div class="fields">
+          <div class="field">
+            <label>Message</label>
+            <textarea></textarea>
+          </div>
+        </div>
+        <div class="ui primary submit button">Send</div>
+      </div>
+    </div>
+      <p style="position: absolute; margin: 12% 2%; z-index: 1;">Copyright &copy; 2021 Patrick Ramseier</p>
+      <svg id="wave" style="transform:rotate(0deg); transition: 0.3s; z-index: 2; vertical-align: top;" viewBox="0 0 1440 350" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(105, 163, 202, 1)" offset="0%"></stop><stop stop-color="rgba(44, 75, 68, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,315L26.7,268.3C53.3,222,107,128,160,75.8C213.3,23,267,12,320,52.5C373.3,93,427,187,480,221.7C533.3,257,587,233,640,192.5C693.3,152,747,93,800,99.2C853.3,105,907,175,960,204.2C1013.3,233,1067,222,1120,204.2C1173.3,187,1227,163,1280,157.5C1333.3,152,1387,163,1440,157.5C1493.3,152,1547,128,1600,105C1653.3,82,1707,58,1760,64.2C1813.3,70,1867,105,1920,140C1973.3,175,2027,210,2080,204.2C2133.3,198,2187,152,2240,110.8C2293.3,70,2347,35,2400,58.3C2453.3,82,2507,163,2560,169.2C2613.3,175,2667,105,2720,110.8C2773.3,117,2827,198,2880,227.5C2933.3,257,2987,233,3040,215.8C3093.3,198,3147,187,3200,192.5C3253.3,198,3307,222,3360,198.3C3413.3,175,3467,105,3520,99.2C3573.3,93,3627,152,3680,186.7C3733.3,222,3787,233,3813,239.2L3840,245L3840,350L3813.3,350C3786.7,350,3733,350,3680,350C3626.7,350,3573,350,3520,350C3466.7,350,3413,350,3360,350C3306.7,350,3253,350,3200,350C3146.7,350,3093,350,3040,350C2986.7,350,2933,350,2880,350C2826.7,350,2773,350,2720,350C2666.7,350,2613,350,2560,350C2506.7,350,2453,350,2400,350C2346.7,350,2293,350,2240,350C2186.7,350,2133,350,2080,350C2026.7,350,1973,350,1920,350C1866.7,350,1813,350,1760,350C1706.7,350,1653,350,1600,350C1546.7,350,1493,350,1440,350C1386.7,350,1333,350,1280,350C1226.7,350,1173,350,1120,350C1066.7,350,1013,350,960,350C906.7,350,853,350,800,350C746.7,350,693,350,640,350C586.7,350,533,350,480,350C426.7,350,373,350,320,350C266.7,350,213,350,160,350C106.7,350,53,350,27,350L0,350Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(116, 168, 210, 1)" offset="0%"></stop><stop stop-color="rgba(105, 163, 202, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,0L26.7,11.7C53.3,23,107,47,160,52.5C213.3,58,267,47,320,40.8C373.3,35,427,35,480,52.5C533.3,70,587,105,640,122.5C693.3,140,747,140,800,134.2C853.3,128,907,117,960,99.2C1013.3,82,1067,58,1120,75.8C1173.3,93,1227,152,1280,163.3C1333.3,175,1387,140,1440,140C1493.3,140,1547,175,1600,198.3C1653.3,222,1707,233,1760,245C1813.3,257,1867,268,1920,227.5C1973.3,187,2027,93,2080,70C2133.3,47,2187,93,2240,128.3C2293.3,163,2347,187,2400,180.8C2453.3,175,2507,140,2560,116.7C2613.3,93,2667,82,2720,64.2C2773.3,47,2827,23,2880,64.2C2933.3,105,2987,210,3040,227.5C3093.3,245,3147,175,3200,169.2C3253.3,163,3307,222,3360,233.3C3413.3,245,3467,210,3520,180.8C3573.3,152,3627,128,3680,140C3733.3,152,3787,198,3813,221.7L3840,245L3840,350L3813.3,350C3786.7,350,3733,350,3680,350C3626.7,350,3573,350,3520,350C3466.7,350,3413,350,3360,350C3306.7,350,3253,350,3200,350C3146.7,350,3093,350,3040,350C2986.7,350,2933,350,2880,350C2826.7,350,2773,350,2720,350C2666.7,350,2613,350,2560,350C2506.7,350,2453,350,2400,350C2346.7,350,2293,350,2240,350C2186.7,350,2133,350,2080,350C2026.7,350,1973,350,1920,350C1866.7,350,1813,350,1760,350C1706.7,350,1653,350,1600,350C1546.7,350,1493,350,1440,350C1386.7,350,1333,350,1280,350C1226.7,350,1173,350,1120,350C1066.7,350,1013,350,960,350C906.7,350,853,350,800,350C746.7,350,693,350,640,350C586.7,350,533,350,480,350C426.7,350,373,350,320,350C266.7,350,213,350,160,350C106.7,350,53,350,27,350L0,350Z"></path></svg>
+  </body>
+</html>
