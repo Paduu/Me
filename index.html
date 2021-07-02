@@ -49,8 +49,13 @@
         <a class="item" href="#" onclick="scrollEducation();">Education</a>
         <a class="item" href="#" onclick="scrollSkills();">Skills</a>
         <a class="item" href="#" onclick="scrollContact();">Contact</a>
-        <a class="item" href="#"><i class="linkedin icon"></i></a>
-        <a class="item" href="#"><i class="xing square icon"></i></a>
+        <div class="ui simple dropdown item">
+          <i class="share alternate icon"></i>
+          <div class="menu">
+            <a class="item" href="https://www.linkedin.com/in/patrick-ramseier-351332216/"><i class="linkedin icon"></i>LinkedIn</a>
+            <a class="item" href="https://www.xing.com/profile/Patrick_Ramseier2/"><i class="xing square icon"></i>Xing </a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -65,7 +70,7 @@
           <div class="content">About Me</div>
         </h1> 
         <p style="text-align: justify;">
-          Hi there! My name is Patrick and I am 28 years old. I live and grew up in Switzerland. For the last past six years, I worked as a ‘Network Security Engineer’ in a small company with customers from all around the world. Before that, I worked six more years in the field of IT (4 years education, 2 years as System Administrator), which sums up to a total of almost 12 years in the Information Technology sector. My character can be described as ambitious, dynamic, flexible, and always interested in learning something new. In my free time, I like to travel and discover the world, its landscapes, and especially its cultures. In 2019 I traveled through Central America and recently I volunteered for three months in Ecuador, South America. To combine these two passions (traveling and my profession) I decided to start working as a freelancer. If you want to know more about me, check out my skills below or look for me on social media!
+          Hi there! My name is Patrick and I am 28 years old. I grew up and live   in Switzerland. For the last past six years, I worked as a ‘Network Security Engineer’ in a small company with customers from all around the world. Before that, I worked six more years in the field of IT (4 years education, 2 years as System Administrator), which sums up to a total of almost 12 years in the Information Technology sector. My character can be described as ambitious, dynamic, flexible, and always interested in learning something new. In my free time, I like to travel and discover the world, its landscapes, and especially its cultures. In 2019 I traveled through Central America and recently I volunteered for three months in Ecuador, South America. To combine these two passions (traveling and my profession) I decided to start working as a freelancer. If you want to know more about me, check out my skills below or look for me on social media!
         </p>
       </div>
 
@@ -74,12 +79,39 @@
           <i class="book icon"></i>
           <div class="content">Education</div>
         </h1>
-        <div class="ui placeholder">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
+        <h4>Education IT</h4>
+        <table class="ui celled table">
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>Title</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Year">2009-2013</td>
+              <td data-label="Title">Informatiker EFZ</td>
+              <td data-label="Description">Federal Diploma of Vocational Education and Training in Information Technology</td>
+            </tr>
+            <tr>
+              <td data-label="Year">2015-2019</td>
+              <td data-label="Title">dipl. Techniker Informatik HF</td>
+              <td data-label="Description">Advanced Federal Diploma of Higher Education in Information Technology</td>
+            </tr>
+          </tbody>
+        </table>
+        <h4>Certificates Fortinet</h4>
+        <p>In the past six I mainly worked with Fortinet and achieved the following Fortinet certifications:</p>
+        <ul>
+          <li>Network Security Professional (NSE4)</li>
+          <li>Fortinet Network Security Analyst (NSE5)</li>
+          <li>Fortinet Network Security Architect (NSE7)</li>
+        </ul>
+        <div class="ui right aligned container">
+          <img src="images/nse4.png">
+          <img src="images/nse5.png">
+          <img src="images/nse7.png">
         </div>
       </div>
 
@@ -141,30 +173,30 @@
           <i class="paper plane icon"></i>
           <div class="content">Contact</div>
         </h1>
-        <div class="ui equal width form">
+        <form class="ui equal width form"> <!-- action="https://formspree.io/f/xqkwlyqw" method="POST"> -->
           <label style="font-weight: bold;">Name</label>
           <div class="two fields">
             <div class="field">
               <input type="text" name="firstname" placeholder="First Name">
             </div>
             <div class="field">
-              <input type="text" name="firstname" placeholder="Last Name">
+              <input type="text" name="lastname" placeholder="Last Name">
             </div>
           </div>
           <div class="fields">
             <div class="field">
               <label>E-Mail</label>
-              <input type="email" name="email" placeholder="email@domain.com">
+              <input type="email" name="_replyto" placeholder="email@domain.com">
             </div>
           </div>
           <div class="fields">
             <div class="field">
               <label>Message</label>
-              <textarea></textarea>
+              <textarea name="message"></textarea>
             </div>
           </div>
-          <div class="ui primary submit button">Send</div>
-        </div>
+          <button class="ui primary submit button" type="submit">Send</button>
+        </form>
       </div>
     </div>
       
